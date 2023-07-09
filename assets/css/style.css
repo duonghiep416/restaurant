@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --font-heading: "Libre Bodoni", serif;
+    --font-text: "Plus Jakarta Sans", sans-serif;
+    --primary-color: #fb8f2c;
+    --dark-color: #111114;
+    --white: #fff;
+    --white-80: rgba(255, 255, 255, 0.8);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: var(--font-text);
+}
+
+body {
+    font-family: var(--font-text);
+    background-color: var(--dark-color);
+    height: 2000px;
+}
+
+h1,
+h2 {
+    font-family: var(--font-heading);
+    font-size: 6.4rem;
+    font-weight: 500;
+    line-height: 1.15625;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+h2 {
+    text-align: center;
+}
+
+.link__cta {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.625;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.link__cta::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 1px;
+}
+
+.hero__info .link__cta {
+    margin-top: 40px;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: -20px;
+    background-color: var(--dark-color);
+    z-index: 1;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 10px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 34px;
+}
+
+.open-time,
+.nav__link {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.625;
+    color: var(--white-80);
+}
+
+.nav__link:hover {
+    color: var(--primary-color);
+}
+
+.header__cta .link__cta {
+    color: var(--white);
+    margin-left: 28px;
+}
+
+.header__cta .link__cta::after {
+    background-color: var(--white);
+    bottom: 0;
+}
+
+/* Hero */
+.hero__wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.hero__desc {
+    width: 532px;
+    color: var(--white-80);
+    font-style: normal;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.625;
+}
+
+.hero__title {
+    width: 670px;
+    margin: 10px 0 20px;
+}
+
+/* Hero Media */
+.hero__media {
+    width: 500px;
+    height: 436px;
+}
+
+.hero__image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.img-decor {
+    position: absolute;
+    width: 16%;
+    object-fit: cover;
+}
+
+.hero__img {
+    position: absolute;
+    width: 74%;
+    left: 6%;
+    top: 0;
+}
+
+.img-decor-1 {
+    top: 13.2%;
+    right: 4%;
+}
+
+.img-decor-2 {
+    top: 40.8%;
+    right: 0;
+}
+
+.img-decor-3 {
+    bottom: 13.8%;
+    right: 4%;
+}
+
+.price-decor {
+    position: absolute;
+    padding: 12px 16px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: capitalize;
+    left: 0;
+    bottom: 13.2%;
+}
+/* Stats */
+.stats {
+    width: 100%;
+    height: 194px;
+    background-image: linear-gradient(
+            266deg,
+            rgb(0 0 0 / 52%) 0%,
+            rgb(0 0 0 / 76%) 100%
+        ),
+        url(../img/food-background.jpg);
+    /* filter: blur(2.5px); */
+    backdrop-filter: blur(5px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 96px;
+}
+
+.stats__wrapper {
+    height: 194px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stat__item {
+    display: flex;
+    align-items: center;
+    column-gap: 19px;
+}
+
+.stat__quantity {
+    font-family: var(--font-heading);
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.15625;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.stat__title {
+    font-family: var(--font-heading);
+    width: 148px;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: capitalize;
+    color: #fff;
+}
